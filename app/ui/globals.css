@@ -1,0 +1,60 @@
+:root {
+  --v-space: clamp(
+    2rem,
+    2.2vw,
+    3rem
+  ); /* space screen <1000px 20px, 30 / 1366 px (screen) * 100 = 2.2vw, screen >1334px 30px*/
+
+  --v-maxPrimaryPageWidth: 1366px;
+
+  --v-imageBorderRadius: 5px;
+  --v-dark-blue-rgb: 7, 1, 31;
+  --v-white-rgb: 255, 255, 255;
+  --v-light-gray-rgb: 247, 249, 250;
+  --v-pink-rgb: 255, 192, 203;
+  --v-orange-rgb: 243 70 54;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--v-white-rgb));
+  background: rgb(var(--v-dark-blue-rgb));
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.fullContainer {
+  width: 100%;
+}
+
+.wContainer {
+  width: min(92%, 1366px);
+  margin: 2rem auto;
+  padding: 2rem 4rem;
+}
+
+.circleImg {
+  border-radius: 50%;
+}
+
+.backgroundPink {
+  background-color: rgb(var(--v-pink-rgb));
+  color: rgb(var(--v-orange-rgb));
+}
