@@ -1,5 +1,6 @@
+import React from "react";
 import styles from "./components.module.css";
-import { skillsData, Skill } from "@/app/data/skill";
+import { skillsData, Skill } from "@app/data/skill";
 
 export function SkillsList() {
   return (
