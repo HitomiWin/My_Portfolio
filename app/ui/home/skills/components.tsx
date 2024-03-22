@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./components.module.css";
-import { skillsData, Skill } from "@app/data/skill";
+import styles from "./skills.module.css";
+import { skillsData, SkillsData } from "@/app/data/skill";
 
 export function SkillsList() {
   return (
@@ -17,7 +17,7 @@ export function SkillsList() {
   );
 }
 
-function Skill(skills: Pick<Skill, "skills">) {
+function Skill(skills: Pick<SkillsData, "skills">) {
   return (
     <ul>
       {skills.skills.map((skill, index) => (

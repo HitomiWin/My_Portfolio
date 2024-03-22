@@ -4,3 +4,29 @@
   justify-content: center;
   align-items: center;
 }
+.skillsList {
+  padding: var(--v-space) 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 3rem;
+}
+.skillcard {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(var(--v-white-rgb));
+  border-radius: 50%;
+  border-coloer: rgb(var(--v-orange-rgb));
+  position: relative;
+}
+.skillcard span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 200px;
+  text-align: center;
+}

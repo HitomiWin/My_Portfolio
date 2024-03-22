@@ -1,18 +1,16 @@
-export interface Skill {
+export interface SkillsData {
   title: string;
   skills: Array<string>;
 }
 
-export const skillsData: Skill[] = [
+export const skillsData: SkillsData[] = [
   {
     title: "Programmig",
-    skills: [
-      "HTML",
-      "CSS / Bootstrap / Saas",
-      "JavaScript / TypeScript",
-      "C#",
-      "Node.js / Express",
-    ],
+    skills: ["HTML", "JavaScript", "TypeScript", "C#", "Node.js"],
+  },
+  {
+    title: "CSS",
+    skills: ["Bootstrap", "Saas", "CSS-Modules", "Styled-Components"],
   },
   {
     title: "Framewrok",
@@ -24,7 +22,7 @@ export const skillsData: Skill[] = [
   },
   {
     title: "Others",
-    skills: ["Git / GirHub / GitLab", "Jest", "Docker", "Jira"],
+    skills: ["Git / GitHub / GitLab", "Jest", "Docker", "Jira"],
   },
   {
     title: "Language",

@@ -50,10 +50,6 @@ ul {
   padding: 2rem 4rem;
 }
 
-.circleImg {
-  border-radius: 50%;
-}
-
 .backgroundPink {
   background-color: rgb(var(--v-pink-rgb));
   color: rgb(var(--v-orange-rgb));

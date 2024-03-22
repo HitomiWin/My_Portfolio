@@ -4,10 +4,14 @@ import styles from "./hero.module.css";
 export default function Hero() {
   return (
     <section className={`fullContainer`}>
-      <div className={`${styles.container} wContainer `}>
+      <div className={`${styles.container} wContainer  `}>
         <HeroMyImage />
-        <h3>Front-End-Developer</h3>
-        <h1>Hitomi Winberg</h1>
+        <h3 className={[styles.fadeText, styles.fadeIn].join(" ")}>
+          Front-End-Developer
+        </h3>
+        <h1 className={[styles.fadeText, styles.fadeIn].join(" ")}>
+          Hitomi Winberg
+        </h1>
         <Icons />
       </div>
     </section>
