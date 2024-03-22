@@ -6,12 +6,8 @@ export default function Hero() {
     <section className={`fullContainer`}>
       <div className={`${styles.container} wContainer  `}>
         <HeroMyImage />
-        <h3 className={[styles.fadeText, styles.fadeIn].join(" ")}>
-          Front-End-Developer
-        </h3>
-        <h1 className={[styles.fadeText, styles.fadeIn].join(" ")}>
-          Hitomi Winberg
-        </h1>
+        <h3 className={`${styles.fadeText}`}>Front-End-Developer</h3>
+        <h1 className={`${styles.fadeText}`}>Hitomi Winberg</h1>
         <Icons />
       </div>
     </section>

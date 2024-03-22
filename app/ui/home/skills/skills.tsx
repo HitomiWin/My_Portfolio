@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <section className={`fullContainer backgroundPink`}>
       <div className={`${styles.container} wContainer `}>
-        <h2>Skills</h2>
+        <h1>Skills</h1>
         <SkillsList />
       </div>
     </section>

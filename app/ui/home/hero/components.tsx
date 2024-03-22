@@ -23,13 +23,13 @@ export function Icons() {
   return (
     <div>
       <ul className={styles.iconList}>
-        <li className={[styles.fadeText, styles.fadeIn].join(" ")}>
+        <li className={`${styles.fadeText}`}>
           <FontAwesomeIcon icon={faSquareGithub} size="2xl" />
         </li>
-        <li className={[styles.fadeText, styles.fadeIn].join(" ")}>
+        <li className={`${styles.fadeText}`}>
           <FontAwesomeIcon icon={faLinkedin} size="2xl" />
         </li>
-        <li className={[styles.fadeText, styles.fadeIn].join(" ")}>
+        <li className={`${styles.fadeText}`}>
           <FontAwesomeIcon icon={faEnvelope} size="2xl" />
         </li>
       </ul>

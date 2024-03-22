@@ -17,7 +17,7 @@
   height: 200px;
   background-color: rgb(var(--v-white-rgb));
   border-radius: 50%;
-  border-coloer: rgb(var(--v-orange-rgb));
+  border-color: rgb(var(--v-orange-rgb));
   position: relative;
 }
 .skillcard span {
