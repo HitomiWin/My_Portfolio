@@ -1,14 +1,10 @@
 import styles from "./page.module.css";
-import Hero from "@/app/ui/home/hero/hero";
-import Skills from "./ui/home/skills/skills";
-import Projects from "./ui/home/projects/projects";
+import Home from "./ui/home/page";
 
 export default function Page() {
   return (
     <main className={styles.main}>
-      <Hero />
-      <Skills />
-      <Projects />
+      <Home />
     </main>
   );
 }

@@ -11,8 +11,9 @@
   --v-dark-blue-rgb: 7, 1, 31;
   --v-white-rgb: 255, 255, 255;
   --v-light-gray-rgb: 247, 249, 250;
-  --v-pink-rgb: 255, 192, 203;
-  --v-orange-rgb: 243 70 54;
+  --v-pink01-rgb: 245, 211, 217;
+  --v-pink02-rgb: 255, 192, 203;
+  --v-orange-rgb: 78 10 215;
 }
 
 * {
@@ -25,11 +26,6 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-}
-
-body {
-  color: rgb(var(--v-white-rgb));
-  background: rgb(var(--v-dark-blue-rgb));
 }
 
 h1,
@@ -55,6 +51,6 @@ ul {
 }
 
 .backgroundPink {
-  background-color: rgb(var(--v-pink-rgb));
+  background-color: rgb(var(--v-pink02-rgb));
   color: rgb(var(--v-orange-rgb));
 }
