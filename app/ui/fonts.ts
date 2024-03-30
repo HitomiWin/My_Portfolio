@@ -1,10 +1,14 @@
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Open_Sans, Noto_Sans } from "next/font/google";
 
 export const inter = Inter({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "700"],
+  weight: ["100", "200", "300", "400", "700"],
 });
 export const montserrat = Montserrat({
-  weight: ["100", "300", "400"],
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400"],
+});
+export const notesans = Noto_Sans({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });

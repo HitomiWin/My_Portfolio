@@ -1,6 +1,7 @@
 import React from "react";
 import { HeroMyImage, Icons } from "./components";
 import styles from "./hero.module.css";
+
 export default function Hero() {
   return (
     <section className={`fullContainer`}>

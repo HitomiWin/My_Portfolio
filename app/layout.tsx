@@ -1,6 +1,7 @@
 import "@/app/ui/globals.css";
-import { inter } from "@/app/ui/fonts";
+import { notesans } from "@/app/ui/fonts";
 import type { Metadata } from "next";
+import HeaderNav from "./ui/header-nav";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -18,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} montserrat`}>{children}</body>
+      <body className={`${notesans.className} montserrat`}>
+        <HeaderNav />
+        {children}
+      </body>
     </html>
   );
 }
