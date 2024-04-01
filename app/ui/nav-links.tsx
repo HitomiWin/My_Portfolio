@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import styles from "./header-nav.module.css";
 
 const links = [
@@ -9,8 +8,6 @@ const links = [
 ];
 
 export default function NavLinks() {
-  const pathname = usePathname();
-
   return (
     <>
       {links.map((link) => (

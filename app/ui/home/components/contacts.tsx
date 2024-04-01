@@ -1,5 +1,5 @@
 "use client";
-import { contactsData, ICategoryType } from "@/app/data/contacts";
+import { contactsData, ICategoryType } from "@/constants/contacts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import firstletterUpperCase from "@/app/utils/firstletterUpperCase";
