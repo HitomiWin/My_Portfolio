@@ -1,7 +1,6 @@
 .header {
-  height: 90px;
+  height: 10vh;
 }
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -10,6 +9,9 @@
 }
 .nav {
   text-decoration: none;
+}
+.navtext {
+  font-weight: 400;
 }
 .navtext:hover {
   font-weight: 500;

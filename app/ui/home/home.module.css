@@ -1,0 +1,36 @@
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text {
+  --v-fs: clamp(4vh, 5vw, 9vh);
+  font-size: var(--v-fs);
+  line-height: calc(var(--v-fs) + 2rem);
+  font-weight: 100;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-top: clamp(1rem, 5vw, 2rem);
+  gap: clamp(1rem, 5vw, 4rem);
+}
+.contentWrapper > h4 {
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.content {
+  align-self: center;
+  margin-right: 8px;
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.iconAndUrl {
+  display: flex;
+}
