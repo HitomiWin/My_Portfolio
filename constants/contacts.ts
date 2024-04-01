@@ -13,7 +13,7 @@ export interface ContactsData {
   id: string;
   icon: IconDefinition;
   url: string;
-  category: string;
+  category: ICategoryType;
 }
 
 export const contactsData: Array<ContactsData> = [
