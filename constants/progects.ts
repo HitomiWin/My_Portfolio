@@ -1,13 +1,15 @@
 export interface ProjectsData {
-  id: string;
-  description: string;
-  skills: Array<string>;
-  githubUrl: string;
-  deployUrl: string;
-  imagePath: string;
+  readonly id: string;
+  readonly description: string;
+  readonly skills: Array<string>;
+  readonly githubUrl: string;
+  readonly deployUrl: string;
+  readonly imagePath: string;
+  readonly imageWidth: number;
+  readonly imageHeight: number;
 }
 
-export const profectsData: Array<ProjectsData> = [
+export const projectData: Array<ProjectsData> = [
   {
     id: "movie",
     description:
@@ -21,7 +23,9 @@ export const profectsData: Array<ProjectsData> = [
     ],
     githubUrl: "https://github.com/HitomiWin/typescript_movie",
     deployUrl: "https://movie-hitomi.netlify.app",
-    imagePath: "@/public/Movie.png",
+    imagePath: "/movie.png",
+    imageWidth: 1435,
+    imageHeight: 876,
   },
   {
     id: "practical-react-component",
@@ -32,6 +36,8 @@ export const profectsData: Array<ProjectsData> = [
       "https://github.com/AxisCommunications/practical-react-components",
     deployUrl:
       "https://axiscommunications.github.io/practical-react-components/",
-    imagePath: "@/public/Practical_React_Component.png",
+    imagePath: "/practical-react-components.png",
+    imageWidth: 1519,
+    imageHeight: 870,
   },
 ];

@@ -4,7 +4,7 @@ import styles from "../home.module.css";
 
 export default function Hero() {
   return (
-    <div className={`${styles.container} wContainer`}>
+    <section className={`${styles.container} wContainer`}>
       <div>
         <p className={styles.text}>
           Hi, I am Hitomi Winberg! <br />
@@ -14,6 +14,6 @@ export default function Hero() {
         </p>
       </div>
       <Contacts />
-    </div>
+    </section>
   );
 }

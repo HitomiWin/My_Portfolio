@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./skills.module.css";
-import { skillsData, SkillsData } from "@/constants/skill";
+import { skillsData, SkillsData } from "@/constants";
 
 export function SkillsList() {
   return (

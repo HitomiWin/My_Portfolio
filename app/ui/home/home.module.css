@@ -13,7 +13,7 @@
 
 .contactContainer {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-top: clamp(1rem, 5vw, 2rem);
   gap: clamp(1rem, 5vw, 4rem);

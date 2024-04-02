@@ -3,7 +3,7 @@ export interface SkillsData {
   skills: Array<string>;
 }
 
-export const skillsData: SkillsData[] = [
+export const skillsData: Array<SkillsData> = [
   {
     title: "Programmig",
     skills: ["HTML", "JavaScript", "TypeScript", "C#", "Node.js"],
