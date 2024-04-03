@@ -14,6 +14,7 @@ export interface ContactsData {
   icon: IconDefinition;
   url: string;
   category: ICategoryType;
+  name: string;
 }
 
 export const contactsData: Array<ContactsData> = [
@@ -22,17 +23,20 @@ export const contactsData: Array<ContactsData> = [
     icon: faEnvelope,
     url: "hitomi.winberg@gmail.com",
     category: ICategoryType.contact,
+    name: "Mail",
   },
   {
     id: "github",
     icon: faSquareGithub,
     url: "https://github.com/HitomiWin",
     category: ICategoryType.social,
+    name: "GitHub",
   },
   {
     id: "linkedin",
     icon: faLinkedin,
     url: "https://www.linkedin.com/in/hitomi-winberg-8880b214a/",
     category: ICategoryType.social,
+    name: "LinkedIn",
   },
 ];

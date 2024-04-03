@@ -4,16 +4,15 @@ interface Props {
   project: ProjectsData;
 }
 
-const defaultWidth = 500;
 export default function Project({ project }: Props) {
-  const height = project.imageHeight / (project.imageWidth / defaultWidth);
+  const height = project.imageHeight / (project.imageWidth / 300);
   return (
     <div>
       <Image
         src={project.imagePath}
         alt="project image"
-        width={defaultWidth}
-        height={height}
+        width={project.imageWidth}
+        height={project.imageHeight}
       />
     </div>
   );

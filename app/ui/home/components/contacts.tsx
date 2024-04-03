@@ -26,12 +26,12 @@ export default function Contacts() {
       {socials && (
         <div className={styles.contentWrapper}>
           <h4>{ICategoryType.social.toLocaleUpperCase()}</h4>
-          <div className={styles.socialContainer}>
-            {socials.map(({ id, icon, url }) => (
-              <div key={id}>
+          <div className={styles.iconAndUrlWrapper}>
+            {socials.map(({ id, icon, url, name }) => (
+              <div key={id} className={styles.iconAndUrl}>
                 <FontAwesomeIcon icon={icon} className={styles.content} />
                 <a href={url} className={styles.content}>
-                  {firstletterUpperCase(id)}
+                  {name}
                 </a>
               </div>
             ))}
