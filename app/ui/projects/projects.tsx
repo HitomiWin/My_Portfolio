@@ -5,7 +5,7 @@ import styles from "./project.module.css";
 
 export default function Projects() {
   return (
-    <section className={`${styles.container} wContainer`}>
+    <section className={styles.imgtext}>
       {projectData.map((project) => (
         <Project project={project} key={project.id} />
       ))}

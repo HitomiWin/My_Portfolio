@@ -10,7 +10,7 @@
 .hero h1 {
   display: block;
   line-height: 1.4em;
-  font-size: clamp(2rem, 10vmax, 3rem);
+  font-size: clamp(2rem, 4.4vw, 3rem);
   font-weight: 100;
 }
 .contactContainer {

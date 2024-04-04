@@ -27,17 +27,17 @@ export const projectData: Array<ProjectsData> = [
     imageWidth: 1435,
     imageHeight: 876,
   },
-  {
-    id: "practical-react-component",
-    description:
-      "A catalogue of React components focused on ease-of-use. I'm fixing buggs as a contoributor",
-    skills: ["TypeScript", "React", "Jest", "MDX", "Cypress", "Formik"],
-    githubUrl:
-      "https://github.com/AxisCommunications/practical-react-components",
-    deployUrl:
-      "https://axiscommunications.github.io/practical-react-components/",
-    imagePath: "/practical-react-components.png",
-    imageWidth: 1519,
-    imageHeight: 870,
-  },
+  // {
+  //   id: "practical-react-component",
+  //   description:
+  //     "A catalogue of React components focused on ease-of-use. I'm fixing buggs as a contoributor",
+  //   skills: ["TypeScript", "React", "Jest", "MDX", "Cypress", "Formik"],
+  //   githubUrl:
+  //     "https://github.com/AxisCommunications/practical-react-components",
+  //   deployUrl:
+  //     "https://axiscommunications.github.io/practical-react-components/",
+  //   imagePath: "/practical-react-components.png",
+  //   imageWidth: 1519,
+  //   imageHeight: 870,
+  // },
 ];
