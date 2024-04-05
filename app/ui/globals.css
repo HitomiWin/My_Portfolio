@@ -92,3 +92,12 @@ img {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
+
+.iconAndUrl {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.iconAndUrlContent {
+  align-self: center;
+}

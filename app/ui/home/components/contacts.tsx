@@ -1,9 +1,14 @@
 "use client";
 import { contactsData, ICategoryType } from "@/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
-import firstletterUpperCase from "@/app/utils/firstletterUpperCase";
+import React, { FC, ReactNode } from "react";
 import styles from "../home.module.css";
+import { IconAndTextUrl, IconAndUrl } from "../../iconAndUrl";
+
+type ICategoryTypeWithProps = {
+  readonly children: ReactNode;
+  readonly category: ICategoryType;
+};
 
 export default function Contacts() {
   const contact = contactsData.find(
@@ -12,31 +17,38 @@ export default function Contacts() {
   const socials = contactsData.filter(
     ({ category }) => category === ICategoryType.social,
   );
+
+  const CategoryTypeWith: FC<ICategoryTypeWithProps> = ({
+    children,
+    category,
+  }) => {
+    return (
+      <div className={styles.contentWrapper}>
+        <h4>{category.toLocaleUpperCase()}</h4>
+        <>{children}</>
+      </div>
+    );
+  };
+
   return (
     <div className={styles.contactContainer}>
       {contact && (
-        <div className={styles.contentWrapper}>
-          <h4>{ICategoryType.contact.toLocaleUpperCase()}</h4>
-          <div className={styles.iconAndUrl}>
-            <FontAwesomeIcon icon={contact.icon} className={styles.content} />
-            <p className={styles.content}>{contact.url}</p>
-          </div>
-        </div>
+        <>
+          <CategoryTypeWith category={ICategoryType.contact}>
+            <IconAndTextUrl icon={contact.icon} url={contact.url} />
+          </CategoryTypeWith>
+        </>
       )}
       {socials && (
-        <div className={styles.contentWrapper}>
-          <h4>{ICategoryType.social.toLocaleUpperCase()}</h4>
-          <div className={styles.iconAndUrlWrapper}>
-            {socials.map(({ id, icon, url, name }) => (
-              <div key={id} className={styles.iconAndUrl}>
-                <FontAwesomeIcon icon={icon} className={styles.content} />
-                <a href={url} className={styles.content}>
-                  {name}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
+        <>
+          <CategoryTypeWith category={ICategoryType.social}>
+            <div className={styles.iconAndUrlWrapper}>
+              {socials.map(({ id, icon, url, name }) => (
+                <IconAndUrl key={id} icon={icon} url={url} name={name} />
+              ))}
+            </div>
+          </CategoryTypeWith>
+        </>
       )}
     </div>
   );
