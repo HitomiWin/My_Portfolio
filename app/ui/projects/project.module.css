@@ -1,7 +1,34 @@
+.projects {
+  background-color: rgb(var(--v-white-rgb));
+}
 .imgtext {
+  padding: clamp(90px, 9vw, 120px) 0;
+}
+.imgtext + .imgtext {
+  padding-top: 0;
 }
 .container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: clamp(45px, 6vw, 80px);
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container > .text {
+    flex: 1;
+    min-width: 17em;
+  }
+
+  .container > .img {
+    flex: 2;
+  }
+
+  .container.reverse {
+    flex-direction: row-reverse;
+  }
 }

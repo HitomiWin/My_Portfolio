@@ -12,7 +12,7 @@
   line-height: 1.4em;
   font-weight: 100;
   margin: 0.67em 0;
-  font-size: clamp(32px, 5vw, 64px);
+  font-size: clamp(32px, 4.6vw, 64px);
   letter-spacing: clamp(-0.01px, 5vw, -0.02em);
 }
 .contactContainer {

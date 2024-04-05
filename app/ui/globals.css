@@ -10,7 +10,9 @@
   --v-imageBorderRadius: 5px;
   --v-dark-blue-rgb: 7, 1, 31;
   --v-white-rgb: 255, 255, 255;
+  --v-dark-gray-rgb: 136, 136, 136;
   --v-light-gray-rgb: 247, 249, 250;
+  --v-dark-red-rgb: 183, 38, 97;
   --v-black-rgb: 0, 0, 0;
   --v-pink01-rgb: 255, 232, 255;
   --v-pink02-rgb: 255, 192, 203;
@@ -37,13 +39,25 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+figure {
   margin: 0;
+}
+a {
   color: rgb(var(--v-black-rgb));
+}
+a:hover {
+  filter: brightness(90%) constrast(120%);
 }
 
 ul {
   list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .wContainer {
@@ -54,4 +68,27 @@ ul {
 .homeContainer {
   display: grid;
   gap: 4rem;
+}
+
+.headingDecoration {
+  font-size: clamp(30px, 3vw, 40px);
+  min-height: 0vw;
+  font-weight: 400;
+}
+
+.headingDecoration::after {
+  display: block;
+  content: "";
+  width: 160px;
+  height: 0px;
+  border-top: solid 1px rgb(var(--v-dark-red-rgb));
+  margin-top: 0.6em;
+}
+
+.headingDecoration + p {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  color: rgb(var(--v-dark-gray-rgb));
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
 }

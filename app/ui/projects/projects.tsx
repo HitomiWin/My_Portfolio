@@ -5,10 +5,10 @@ import styles from "./project.module.css";
 
 export default function Projects() {
   return (
-    <section className={styles.imgtext}>
-      {projectData.map((project) => (
-        <Project project={project} key={project.id} />
+    <div className={styles.projects}>
+      {projectData.map((project, index) => (
+        <Project project={project} index={index} key={project.id} />
       ))}
-    </section>
+    </div>
   );
 }
