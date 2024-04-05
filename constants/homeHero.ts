@@ -17,6 +17,17 @@ export interface ContactsData {
   name: string;
 }
 
+export interface HeroData {
+  greeting: string;
+  message: string;
+}
+
+export const heroData: HeroData = {
+  greeting: "Hi, I am Hitomi Winberg 👋",
+  message:
+    "As a front-end developer, my motto is crafting efficient, clutter-freecode. Ensuring users navigate seamlessly to the information they seek without any inconvenience.",
+};
+
 export const contactsData: Array<ContactsData> = [
   {
     id: "mail",

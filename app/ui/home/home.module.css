@@ -1,5 +1,5 @@
 .hero {
-  height: 650px;
+  height: auto;
 }
 .container {
   display: grid;
@@ -10,8 +10,10 @@
 .hero h1 {
   display: block;
   line-height: 1.4em;
-  font-size: clamp(2rem, 4.4vw, 3rem);
   font-weight: 100;
+  margin: 0.67em 0;
+  font-size: clamp(32px, 5vw, 64px);
+  letter-spacing: clamp(-0.01px, 5vw, -0.02em);
 }
 .contactContainer {
   display: flex;
@@ -25,12 +27,11 @@
 }
 .contentWrapper h4 {
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 }
 .content {
   align-self: center;
 }
-
 .iconAndUrl {
   display: flex;
   gap: 0.5rem;

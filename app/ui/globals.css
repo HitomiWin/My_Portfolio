@@ -46,14 +46,12 @@ ul {
   list-style: none;
 }
 
-.fullContainer {
-  /* width: 100%; */
-}
-
 .wContainer {
   width: min(92%, 1166px);
   margin: auto;
-  /* padding-top: clamp(1rem, 5vw, 2rem);
-  padding-right: clamp(0, 5vw, 4rem);
-  padding-left: clamp(0, 5vw, 4rem); */
+}
+
+.homeContainer {
+  display: grid;
+  gap: 4rem;
 }
