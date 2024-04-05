@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import styles from "./header-nav.module.css";
+import styles from "@/styles/header-nav.module.css";
 
 const links = [
   { name: "Hitomi Winberg", href: "/" },

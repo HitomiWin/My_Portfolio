@@ -1,5 +1,5 @@
 import { ProjectsData } from "@/constants/projects";
-import styles from "./project.module.css";
+import styles from "@/styles/project.module.css";
 import Image from "next/image";
 interface Props {
   project: ProjectsData;

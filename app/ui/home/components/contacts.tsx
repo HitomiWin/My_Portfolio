@@ -1,8 +1,7 @@
 "use client";
 import { contactsData, ICategoryType } from "@/constants";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { FC, ReactNode } from "react";
-import styles from "../home.module.css";
+import styles from "@/styles/home.module.css";
 import { IconAndTextUrl, IconAndUrl } from "../../iconAndUrl";
 
 type ICategoryTypeWithProps = {

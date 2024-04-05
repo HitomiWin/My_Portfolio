@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Contacts from "./contacts";
-import styles from "../home.module.css";
+import styles from "@/styles/home.module.css";
 import { heroData } from "@/constants";
 
 export default function Hero() {

@@ -1,6 +1,6 @@
 import React from "react";
 import { HeroMyImage, Icons } from "./components";
-import styles from "./hero.module.css";
+import styles from "@/styles/hero.module.css";
 
 export default function Hero() {
   return (

@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "./skills.module.css";
 import { SkillsList } from "./components";
 export default function Skills() {
   return (
-    <section className={`fullContainer backgroundPink`}>
+    <section className={`backgroundPink`}>
       <div className={`wContainer`}>
         <h1>Skills</h1>
         <SkillsList />

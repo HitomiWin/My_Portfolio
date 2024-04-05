@@ -1,6 +1,6 @@
 import React from "react";
 import NavLinks from "./nav-links";
-import styles from "./header-nav.module.css";
+import styles from "@/styles/header-nav.module.css";
 
 export default function HeaderNav() {
   return (
