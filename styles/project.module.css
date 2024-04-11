@@ -2,7 +2,7 @@
   background-color: rgb(var(--v-white-rgb));
 }
 .imgtext {
-  padding: clamp(90px, 9vw, 120px) 0;
+  padding: clamp(120px, 10vw, 150px) 0;
 }
 .imgtext + .imgtext {
   padding-top: 0;
@@ -11,6 +11,11 @@
   display: flex;
   flex-direction: column;
   gap: clamp(45px, 6vw, 80px);
+}
+.iconAndUrlWrapper {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
 }
 
 @media (min-width: 768px) {

@@ -1,13 +1,8 @@
 "use client";
+import React from "react";
 import { contactsData, ICategoryType } from "@/constants";
-import React, { FC, ReactNode } from "react";
 import styles from "@/styles/home.module.css";
-import { IconAndTextUrl, IconAndUrl } from "../../iconAndUrl";
-
-type ICategoryTypeWithProps = {
-  readonly children: ReactNode;
-  readonly category: ICategoryType;
-};
+import { CategoryTypeWith, IconAndTextUrl, IconAndUrl } from "../../iconAndUrl";
 
 export default function Contacts() {
   const contact = contactsData.find(
@@ -16,18 +11,6 @@ export default function Contacts() {
   const socials = contactsData.filter(
     ({ category }) => category === ICategoryType.social,
   );
-
-  const CategoryTypeWith: FC<ICategoryTypeWithProps> = ({
-    children,
-    category,
-  }) => {
-    return (
-      <div className={styles.contentWrapper}>
-        <h4>{category.toLocaleUpperCase()}</h4>
-        <>{children}</>
-      </div>
-    );
-  };
 
   return (
     <div className={styles.contactContainer}>

@@ -1,9 +1,25 @@
+import {
+  faSquareGithub,
+  IconDefinition,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+interface Site {
+  readonly url: string;
+  readonly icon: IconDefinition;
+  readonly name: string;
+}
+enum IText {
+  github = "GitHub",
+  link = "Live Site",
+}
+
 export interface ProjectsData {
   readonly id: string;
   readonly description: string;
   readonly skills: Array<string>;
-  readonly githubUrl: string;
-  readonly deployUrl: string;
+  readonly github: Site;
+  readonly link: Site;
   readonly imagePath: string;
   readonly imageWidth: number;
   readonly imageHeight: number;
@@ -21,8 +37,17 @@ export const projectData: Array<ProjectsData> = [
       "React-query",
       "React-testing-library",
     ],
-    githubUrl: "https://github.com/HitomiWin/typescript_movie",
-    deployUrl: "https://movie-hitomi.netlify.app",
+    github: {
+      url: "https://github.com/HitomiWin/typescript_movie",
+      icon: faSquareGithub,
+      name: IText.github,
+    },
+    link: {
+      url: "https://movie-hitomi.netlify.app",
+      icon: faArrowUpRightFromSquare,
+      name: IText.link,
+    },
+
     imagePath: "/movie.png",
     imageWidth: 1435,
     imageHeight: 876,
@@ -32,10 +57,16 @@ export const projectData: Array<ProjectsData> = [
     description:
       "A catalogue of React components focused on ease-of-use. I'm fixing buggs as a contoributor",
     skills: ["TypeScript", "React", "Jest", "MDX", "Cypress", "Formik"],
-    githubUrl:
-      "https://github.com/AxisCommunications/practical-react-components",
-    deployUrl:
-      "https://axiscommunications.github.io/practical-react-components/",
+    github: {
+      url: "https://github.com/AxisCommunications/practical-react-components",
+      icon: faSquareGithub,
+      name: IText.github,
+    },
+    link: {
+      url: "https://axiscommunications.github.io/practical-react-components/",
+      icon: faArrowUpRightFromSquare,
+      name: IText.link,
+    },
     imagePath: "/practical-react-components.png",
     imageWidth: 1519,
     imageHeight: 870,

@@ -45,6 +45,7 @@ figure {
 }
 a {
   color: rgb(var(--v-black-rgb));
+  text-decoration: none;
 }
 a:hover {
   filter: brightness(90%) constrast(120%);
@@ -91,13 +92,4 @@ img {
   color: rgb(var(--v-dark-gray-rgb));
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-}
-
-.iconAndUrl {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.iconAndUrlContent {
-  align-self: center;
 }

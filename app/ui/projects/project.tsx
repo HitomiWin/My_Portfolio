@@ -1,6 +1,7 @@
 import { ProjectsData } from "@/constants/projects";
 import styles from "@/styles/project.module.css";
 import Image from "next/image";
+import { IconAndUrl } from "../iconAndUrl";
 interface Props {
   project: ProjectsData;
   index: number;
@@ -8,7 +9,7 @@ interface Props {
 
 export default function Project({ project, index }: Props) {
   const isOdd = index % 2 === 1;
-
+  const sites = [project.github, project.link];
   return (
     <section className={styles.imgtext}>
       <div
@@ -18,6 +19,11 @@ export default function Project({ project, index }: Props) {
           <h2 className="headingDecoration">{project.id.toUpperCase()}</h2>
           <p>{project.skills.map((skill) => skill).join(" / ")}</p>
           <p>{project.description}</p>
+          <div className={styles.iconAndUrlWrapper}>
+            {sites.map(({ icon, url, name }, index) => (
+              <IconAndUrl key={index} icon={icon} url={url} name={name} />
+            ))}
+          </div>
         </div>
         <figure className={styles.img}>
           <Image
