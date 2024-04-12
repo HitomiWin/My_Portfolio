@@ -16,7 +16,8 @@
   --v-black-rgb: 0, 0, 0;
   --v-pink01-rgb: 255, 232, 255;
   --v-pink02-rgb: 255, 192, 203;
-  --v-orange-rgb: 78 10 215;
+  --v-orange-rgb: 78, 10, 215;
+  --v-light-green-rgb: 207, 235, 233;
 }
 
 * {
@@ -92,4 +93,12 @@ img {
   color: rgb(var(--v-dark-gray-rgb));
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
+}
+
+header.about {
+  background-color: rgb(var(--v-light-green-rgb));
+}
+
+main.about {
+  background-color: rgb(var(--v-light-green-rgb));
 }
