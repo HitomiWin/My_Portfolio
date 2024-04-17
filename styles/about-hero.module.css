@@ -1,0 +1,41 @@
+.hero {
+  height: auto;
+}
+.imgtext {
+  padding: clamp(16px, 7vw, 90px) 0;
+}
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: clamp(45px, 6vw, 80px);
+}
+.iconAndUrlWrapper {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.iconList {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+.img > img {
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .container > .img {
+    flex: 1;
+    min-width: 17em;
+  }
+
+  .container > .text {
+    flex: 2;
+  }
+}

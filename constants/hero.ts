@@ -22,10 +22,23 @@ export interface HeroData {
   message: string;
 }
 
+export interface AboutHeroText {
+  title: string;
+  subTitle: string;
+  description: string;
+}
+
 export const heroData: HeroData = {
   greeting: "Hi, I am Hitomi Winberg 👋",
   message:
     "As a front-end developer, my motto is crafting efficient, clutter-freecode. Ensuring users navigate seamlessly to the information they seek without any inconvenience.",
+};
+
+export const aboutHeroText: AboutHeroText = {
+  title: "Hitomi Winberg",
+  subTitle: "Front End Developer",
+  description:
+    " As a front-end developer, my motto is crafting efficient, clutter-freecode. Ensuring users navigate seamlessly to the information they seek without any inconvenience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremquerepudiandae eaque, ab facilis, dolor quod nihil amet recusandaeconsectetur dicta hic cum ut rerum illo sequi. Aliquid veritatisrecusandae soluta?",
 };
 
 export const contactsData: Array<ContactsData> = [

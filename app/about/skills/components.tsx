@@ -7,7 +7,7 @@ export function SkillsList() {
     <div className={styles.skillsList}>
       {skillsData.map(({ title, skills }) => (
         <div key={title} className={`${styles.skill}`}>
-          <div className={styles.skillcard}>
+          <div>
             <h3 className={styles.title}>{title}</h3>
             <span>
               <Skill skills={skills} />
