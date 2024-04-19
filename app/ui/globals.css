@@ -101,6 +101,10 @@ header.about {
   background-color: rgb(var(--v-light-green-rgb));
 }
 
+footer.about {
+  background-color: rgb(var(--v-light-green-rgb));
+}
+
 main.about {
   background-color: rgb(var(--v-light-green-rgb));
 }

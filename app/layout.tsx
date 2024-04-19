@@ -5,6 +5,7 @@ import HeaderNav from "./ui/header-nav";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Footer from "./ui/footer";
 config.autoAddCss = false;
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={`${notesans.className} montserrat`}>
         <HeaderNav />
         {children}
+        <Footer />
       </body>
     </html>
   );
