@@ -2,7 +2,7 @@
   height: auto;
 }
 .imgtext {
-  padding: clamp(16px, 7vw, 90px) 0;
+  padding: var(--v-space) 0;
 }
 .container {
   display: flex;
@@ -24,7 +24,9 @@
 .img > img {
   border-radius: 50%;
 }
-
+.description {
+  font-size: clamp(20px, 2.3vw, 32px);
+}
 @media (min-width: 768px) {
   .container {
     flex-direction: row;

@@ -52,7 +52,7 @@ export function HeroText() {
     <div className={styles.text}>
       <h2 className="headingDecoration">{title.toLocaleUpperCase()}</h2>
       <p>{subTitle.toLocaleUpperCase()}</p>
-      <p>{description}</p>
+      <p className={styles.description}>{description}</p>
       <div className={styles.iconAndUrlWrapper}>
         {socials.map(({ icon, url, name }, index) => (
           <IconAndUrl key={index} icon={icon} url={url} name={name} />

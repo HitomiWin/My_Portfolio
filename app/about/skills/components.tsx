@@ -1,29 +1,28 @@
 import React from "react";
+import { lato } from "@/app/ui/fonts";
 import styles from "@/styles/skills.module.css";
-import { skillsData, SkillsData } from "@/constants";
+import { skills, Skills } from "@/constants";
 
 export function SkillsList() {
   return (
-    <div className={styles.skillsList}>
-      {skillsData.map(({ title, skills }) => (
-        <div key={title} className={`${styles.skill}`}>
-          <div>
-            <h3 className={styles.title}>{title}</h3>
-            <span>
-              <Skill skills={skills} />
-            </span>
-          </div>
+    <div className={styles.container}>
+      {skills.map(({ title, items }) => (
+        <div key={title}>
+          <h2 className={styles.title}>{title.toLocaleUpperCase()}...</h2>
+          <Item items={items} />
         </div>
       ))}
     </div>
   );
 }
 
-function Skill(skills: Pick<SkillsData, "skills">) {
+function Item(skills: Pick<Skills, "items">) {
   return (
     <ul>
-      {skills.skills.map((skill, index) => (
-        <li key={index}>{skill}</li>
+      {skills.items.map((item, index) => (
+        <li key={index} className={`${lato.className} ${styles.skill}`}>
+          {item}
+        </li>
       ))}
     </ul>
   );

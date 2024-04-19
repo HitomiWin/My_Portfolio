@@ -1,31 +1,31 @@
-export interface SkillsData {
+export interface Skills {
   title: string;
-  skills: Array<string>;
+  items: Array<string>;
 }
 
-export const skillsData: Array<SkillsData> = [
+export const skills: Array<Skills> = [
   {
-    title: "Programmig",
-    skills: ["HTML", "JavaScript", "TypeScript", "C#", "Node.js"],
+    title: "Programming",
+    items: ["HTML", "JavaScript", "TypeScript", "C#", "Node.js"],
   },
   {
     title: "CSS",
-    skills: ["Bootstrap", "Saas", "CSS-Modules", "Styled-Components"],
+    items: ["Bootstrap", "Saas", "CSS-Modules", "Styled-Components"],
   },
   {
     title: "Framewrok",
-    skills: ["React", "Vue", "Next.js"],
+    items: ["React", "Vue", "Next.js"],
   },
   {
     title: "Database",
-    skills: ["GraphQL / Urql", "SQLite", "MongoDB", "Firebase"],
+    items: ["GraphQL / Urql", "SQLite", "MongoDB", "Firebase"],
   },
   {
     title: "Others",
-    skills: ["Git / GitHub / GitLab", "Jest", "Docker", "Jira"],
+    items: ["Git / GitHub / GitLab", "Jest", "Docker", "Jira"],
   },
   {
     title: "Language",
-    skills: ["English", "Swedish", "Japanese"],
+    items: ["English", "Swedish", "Japanese"],
   },
 ];

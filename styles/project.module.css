@@ -2,7 +2,7 @@
   background-color: rgb(var(--v-white-rgb));
 }
 .imgtext {
-  padding: clamp(120px, 10vw, 150px) 0;
+  padding: clamp(90px, 10vw, 150px) 0;
 }
 .imgtext + .imgtext {
   padding-top: 0;

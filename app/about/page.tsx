@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <main className={headerStyle}>
       <Hero />
-      {/* <Skills /> */}
+      <Skills />
     </main>
   );
 }

@@ -1,12 +1,14 @@
 import React from "react";
+import { montserrat } from "@/app/ui/fonts";
 import { SkillsList } from "./components";
+import styles from '@/styles/skills.module.css'
 export default function Skills() {
   return (
-    <section>
-      <div className={`wContainer`}>
-        <h1>Skills</h1>
+    <div className={styles.skills}>
+      <div className="wContainer">
+        <h2 className={`${styles.heading} ${montserrat.className}`}>SKILLS</h2>
         <SkillsList />
       </div>
-    </section>
+    </div>
   );
 }
