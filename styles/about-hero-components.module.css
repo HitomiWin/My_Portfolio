@@ -1,5 +1,10 @@
-.skills {
+.skills,
+.education {
   background-color: rgb(var(--v-white-rgb));
+  padding: var(--v-space) 0;
+}
+.experience {
+  background-color: rgb(var(--v-light-green-rgb));
   padding: var(--v-space) 0;
 }
 .heading {
@@ -19,11 +24,23 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 32px 25px;
 }
-.skill {
+.item {
   color: gray;
   font-weight: 300;
   letter-spacing: 1.2px;
   font-size: clamp(12px, 2vw, 20px);
+}
+.jobTitle {
+  color: gray;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  font-size: clamp(10px, 1.6vw, 14px);
+  margin: 1rem 0 0.5em;
+}
+.period {
+  color: gray;
+  font-weight: 300;
+  font-size: clamp(10px, 1.6vw, 14px);
 }
 
 @media (min-width: 768px) {
