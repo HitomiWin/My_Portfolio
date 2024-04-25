@@ -11,7 +11,9 @@ export interface Info {
   title: string;
   period: string;
 }
-export const experiences: Array<Info> = [
+type Infos = Array<Info>;
+
+export const experiences: Infos = [
   {
     url: "https://www.axis.com/",
     icon: faBuilding,
@@ -20,7 +22,7 @@ export const experiences: Array<Info> = [
     period: "January 2022 - Present",
   },
 ];
-export const educations: Array<Info> = [
+export const educations: Infos = [
   {
     url: "https://medieinstitutet.se/",
     icon: faGraduationCap,

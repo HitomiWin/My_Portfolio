@@ -48,7 +48,7 @@ export const projectData: Array<ProjectsData> = [
       name: IText.link,
     },
 
-    imagePath: "/movie.png",
+    imagePath: "/movie.jpg",
     imageWidth: 1435,
     imageHeight: 876,
   },
@@ -67,7 +67,7 @@ export const projectData: Array<ProjectsData> = [
       icon: faArrowUpRightFromSquare,
       name: IText.link,
     },
-    imagePath: "/practical-react-components.png",
+    imagePath: "/practical-react-components.jpg",
     imageWidth: 1519,
     imageHeight: 870,
   },

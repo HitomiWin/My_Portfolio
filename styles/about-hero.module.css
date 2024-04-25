@@ -17,7 +17,7 @@
 }
 .iconList {
   display: flex;
-  justify-content: start;
+  justify-content: flext-start;
   align-items: center;
   gap: 20px;
 }

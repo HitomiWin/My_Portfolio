@@ -17,7 +17,7 @@ export default function NavLinks() {
           href={link.href}
           className={styles.nav}
         >
-          <p className={styles.navtext}>{link.name}</p>
+          <p className={styles.navtext}>{link.name.toLocaleUpperCase()}</p>
         </Link>
       ))}{" "}
     </>

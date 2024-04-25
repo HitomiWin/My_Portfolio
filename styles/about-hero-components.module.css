@@ -30,7 +30,7 @@
   letter-spacing: 1.2px;
   font-size: clamp(12px, 2vw, 20px);
 }
-.jobTitle {
+.title {
   color: gray;
   letter-spacing: 1.2px;
   font-weight: 600;
