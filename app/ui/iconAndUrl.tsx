@@ -24,7 +24,10 @@ export function IconAndUrl({ url, icon, name }: Props) {
         className={`${styles.iconAndUrlContent} ${styles.iconAndUrl}`}
       >
         <FontAwesomeIcon icon={icon} className={styles.iconAndUrlContent} />
-        {name ?? ""} ↗
+        <p>
+          {name ?? ""}
+          &#8599;
+        </p>
       </a>
     </div>
   );
