@@ -3,6 +3,7 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: clamp(1rem, 5vw, 4rem);
+  padding: 3rem 0;
 }
 .iconAndUrlWrapper {
   display: flex;

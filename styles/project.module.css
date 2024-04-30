@@ -15,7 +15,10 @@
 .iconAndUrlWrapper {
   display: flex;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 3rem 0;
+}
+.description {
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {

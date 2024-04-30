@@ -1,5 +1,6 @@
 .hero {
   height: auto;
+  padding: var(--v-hero-space) 0;
 }
 .container {
   display: grid;

@@ -18,7 +18,7 @@ export default function Project({ project, index }: Props) {
         <div className={styles.text}>
           <h2 className="headingDecoration">{project.id.toUpperCase()}</h2>
           <p>{project.skills.map((skill) => skill).join(" / ")}</p>
-          <p>{project.description}</p>
+          <p className={styles.description}>{project.description}</p>
           <div className={styles.iconAndUrlWrapper}>
             {sites.map(({ icon, url, name }, index) => (
               <IconAndUrl key={index} icon={icon} url={url} name={name} />

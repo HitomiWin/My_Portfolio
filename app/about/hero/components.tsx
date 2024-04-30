@@ -17,7 +17,7 @@ export function AboutHero() {
             width={300}
             height={300}
             alt="Picture of the author"
-            priority={false}
+            priority={true}
           />
         </figure>
       </div>
@@ -52,7 +52,7 @@ export function HeroText() {
     <div className={styles.text}>
       <h2 className="headingDecoration">{title.toLocaleUpperCase()}</h2>
       <p>{subTitle.toLocaleUpperCase()}</p>
-      <p className={styles.description}>{description}</p>
+      <h3 className={styles.description}>{description}</h3>
       <div className={styles.iconAndUrlWrapper}>
         {socials.map(({ icon, url, name }, index) => (
           <IconAndUrl key={index} icon={icon} url={url} name={name} />

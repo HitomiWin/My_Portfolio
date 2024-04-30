@@ -12,10 +12,10 @@ export function InfoList({ infos }: Props) {
     <div className={styles.profileContainer}>
       {infos.map(({ icon, url, name, title, period }) => (
         <div key={name}>
-          <h2 className={styles.title}>
+          <h3 className={styles.title}>
             {" "}
             <IconAndUrl icon={icon} url={url} name={name} />
-          </h2>
+          </h3>
           <div>
             <p className={`${lato.className} ${styles.title}`}>
               {title.toLocaleUpperCase()}

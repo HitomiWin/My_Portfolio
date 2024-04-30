@@ -1,5 +1,5 @@
 :root {
-  --v-space: clamp(60px, 6.6vw, 90px);
+  --v-space: clamp(90px, 8.7vw, 120px);
   --v-maxPrimaryPageWidth: 1366px;
   --v-dark-blue-rgb: 7, 1, 31;
   --v-white-rgb: 255, 255, 255;
