@@ -8,14 +8,17 @@ export const inter = Inter({
 export const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400"],
+  style: ["italic", "normal"],
 });
 
 export const notesans = Noto_Sans({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
+  style: ["italic", "normal"],
 });
 
 export const lato = Lato({
   subsets: ["latin"],
   weight: ["100", "300", "400"],
+  style: ["italic", "normal"],
 });

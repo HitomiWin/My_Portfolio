@@ -12,7 +12,7 @@
   font-size: clamp(30px, 3vw, 40px);
   min-height: 0vw;
   font-weight: 300;
-  font-style: oblique;
+  font-style: italic;
 }
 .title {
   margin: 1rem 0 0.5em;
