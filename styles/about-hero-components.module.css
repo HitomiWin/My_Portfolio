@@ -1,10 +1,9 @@
 .skills,
 .education {
-  background-color: rgb(var(--v-white-rgb));
+  background-color: rgb(var(--v-white-op));
   padding: var(--v-space) 0;
 }
 .experience {
-  background-color: rgb(var(--v-light-green-rgb));
   padding: var(--v-space) 0;
 }
 .heading {
@@ -13,10 +12,11 @@
   font-size: clamp(30px, 3vw, 40px);
   min-height: 0vw;
   font-weight: 300;
+  font-style: oblique;
 }
 .title {
   margin: 1rem 0 0.5em;
-  font-size: clamp(10px, 1.6vw, 14px);
+  font-size: clamp(14px, 2vw, 20px);
   font-weight: 400;
 }
 .container {
@@ -35,7 +35,7 @@
   font-size: clamp(14px, 2vw, 20px);
 }
 .title {
-  color: gray;
+  color: #505050;
   letter-spacing: 1.2px;
   font-weight: 600;
   font-size: clamp(14px, 2vw, 20px);
@@ -52,6 +52,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .profileContainer {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }

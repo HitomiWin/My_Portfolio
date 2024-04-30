@@ -1,2 +1,3 @@
 yarn run v1.22.19
 $ prettier --check .
+Checking formatting...

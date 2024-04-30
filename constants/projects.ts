@@ -29,7 +29,7 @@ export const projectData: Array<ProjectsData> = [
   {
     id: "movie",
     description:
-      "Discover what's trending daily and weekly, explore movies by title or cast, read detailed biographies of individuals, and delve into movie descriptions. Easily search by genre, all on a responsive platform accessible across all devices.",
+      "I have developed a movie search app using The Movie Database (TMDB) API. It allows users to search for movies by cast, title, genre, and trending categories.",
     skills: [
       "TypeScript",
       "React",

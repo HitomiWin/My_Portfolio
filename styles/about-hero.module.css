@@ -26,6 +26,7 @@
 }
 .description {
   font-size: clamp(20px, 2.3vw, 32px);
+  font-weight: 200;
 }
 @media (min-width: 768px) {
   .container {

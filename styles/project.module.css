@@ -1,5 +1,5 @@
 .projects {
-  background-color: rgb(var(--v-white-rgb));
+  background-color: rgb(var(--v-white-op));
 }
 .imgtext {
   padding: var(--v-space) 0;

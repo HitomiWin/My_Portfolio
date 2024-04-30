@@ -38,7 +38,7 @@ export const aboutHeroText: AboutHeroText = {
   title: "Hitomi Winberg",
   subTitle: "Front End Developer",
   description:
-    " As a front-end developer, my motto is crafting efficient, clutter-freecode. Ensuring users navigate seamlessly to the information they seek without any inconvenience.",
+    "I am a front-end developer. To live the life I love, I am currently facing my biggest challenge in life. I believe in the power of new technologies to make people's lives easier.",
 };
 
 export const contactsData: Array<ContactsData> = [

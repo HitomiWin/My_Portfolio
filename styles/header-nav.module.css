@@ -7,13 +7,6 @@
   align-items: center;
   height: 100%;
 }
-.nav {
-  text-decoration: none;
-}
 .navtext {
   font-weight: 400;
-}
-.navtext:hover {
-  font-weight: 500;
-  text-decoration: underline;
 }
