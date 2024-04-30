@@ -31,7 +31,7 @@ export default function Project({ project, index }: Props) {
             alt="project image"
             width={project.imageWidth}
             height={project.imageHeight}
-            priority={false}
+            priority={true}
           />
         </figure>
       </div>

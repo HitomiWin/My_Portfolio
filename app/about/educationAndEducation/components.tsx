@@ -8,9 +8,8 @@ interface Props {
   infos: Array<Info>;
 }
 export function InfoList({ infos }: Props) {
-  console.log(infos);
   return (
-    <div className={styles.container}>
+    <div className={styles.profileContainer}>
       {infos.map(({ icon, url, name, title, period }) => (
         <div key={name}>
           <h2 className={styles.title}>

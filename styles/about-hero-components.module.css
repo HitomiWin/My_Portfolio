@@ -24,27 +24,34 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 32px 25px;
 }
+.profileContainer {
+  display: grid;
+  gap: 32px 25px;
+}
 .item {
   color: gray;
   font-weight: 300;
   letter-spacing: 1.2px;
-  font-size: clamp(12px, 2vw, 20px);
+  font-size: clamp(14px, 2vw, 20px);
 }
 .title {
   color: gray;
   letter-spacing: 1.2px;
   font-weight: 600;
-  font-size: clamp(10px, 1.6vw, 14px);
+  font-size: clamp(14px, 2vw, 20px);
   margin: 1rem 0 0.5em;
 }
 .period {
   color: gray;
   font-weight: 300;
-  font-size: clamp(10px, 1.6vw, 14px);
+  font-size: clamp(14px, 2vw, 20px);
 }
 
 @media (min-width: 768px) {
   .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .profileContainer {
     grid-template-columns: repeat(3, 1fr);
   }
 }

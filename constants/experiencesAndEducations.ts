@@ -17,7 +17,7 @@ export const experiences: Infos = [
   {
     url: "https://www.axis.com/",
     icon: faBuilding,
-    name: "Axis Communicatioin AB",
+    name: "Axis Communicatioins AB",
     title: "Front end developer",
     period: "January 2022 - Present",
   },
