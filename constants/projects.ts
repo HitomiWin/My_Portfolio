@@ -54,8 +54,7 @@ export const projectData: Array<ProjectsData> = [
   },
   {
     id: "practical-react-component",
-    description:
-      "A catalogue of React components focused on ease-of-use. I'm fixing buggs as a contoributor",
+    description: "A catalogue of React components focused on ease-of-use.",
     skills: ["TypeScript", "React", "Jest", "MDX", "Cypress", "Formik"],
     github: {
       url: "https://github.com/AxisCommunications/practical-react-components",
