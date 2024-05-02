@@ -1,5 +1,6 @@
 :root {
   --v-space: clamp(90px, 8.7vw, 120px);
+  --v-hero-space:clamp(60px, 6.5vw, 90px);
   --v-maxPrimaryPageWidth: 1366px;
   --v-dark-blue-rgb: 7, 1, 31;
   --v-white-rgb: 255, 255, 255;
@@ -119,7 +120,7 @@ header.about {
 }
 
 footer {
-  background: var(--v-gradient-gray-to-white);
+  background: rgb(var(--v-dark-gray-rgb));
 }
 
 main {
