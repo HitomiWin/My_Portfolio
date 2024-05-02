@@ -20,12 +20,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px 25px;
-  padding:2em 0;
+  padding: 2em 0;
 }
 .profileContainer {
   display: grid;
   gap: 32px 25px;
-  padding:2em 0;
+  padding: 2em 0;
 }
 .item {
   color: gray;

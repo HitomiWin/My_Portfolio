@@ -2,7 +2,7 @@
   height: auto;
 }
 .imgtext {
-  padding: var(--v-space) 0;
+  padding: var(--v-hero-space) 0;
 }
 .container {
   display: flex;
@@ -19,8 +19,11 @@
   border-radius: 50%;
 }
 .description {
-  font-size: clamp(24px, 3.5vw, 48px);
+  display: block;
+  line-height: 1.4em;
   font-weight: 200;
+  margin: 0.67em 0;
+  font-size: clamp(32px, 3.5vw, 48px);
 }
 @media (min-width: 768px) {
   .container {

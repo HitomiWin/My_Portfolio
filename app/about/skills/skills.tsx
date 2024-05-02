@@ -6,7 +6,9 @@ export default function Skills() {
   return (
     <div className={styles.skills}>
       <div className="wContainer">
-        <h2 className={`${styles.heading} ${montserrat.className}`}>🎇SKILLS</h2>
+        <h2 className={`${styles.heading} ${montserrat.className}`}>
+          🎇SKILLS
+        </h2>
         <SkillsList />
       </div>
     </div>

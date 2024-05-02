@@ -2,8 +2,8 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: clamp(1rem, 5vw, 4rem);
-  padding: 2rem 0;
+  gap: clamp(2rem, 5vw, 4rem);
+  padding: 1.5rem 0;
 }
 .iconAndUrlWrapper {
   display: flex;

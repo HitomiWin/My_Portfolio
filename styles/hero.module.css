@@ -11,7 +11,7 @@
 .hero h1 {
   display: block;
   line-height: 1.4em;
-  font-weight: 100;
+  font-weight: 200;
   margin: 0.67em 0;
   font-size: clamp(32px, 3.5vw, 48px);
   letter-spacing: clamp(-0.01px, 5vw, -0.02em);

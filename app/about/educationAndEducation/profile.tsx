@@ -11,9 +11,9 @@ interface Props {
 export default function Profile({ category, profile }: Props) {
   return (
     <div className={styles[category]}>
-      <div className="wContainer"> 
+      <div className="wContainer">
         <h2 className={`${styles.heading} ${montserrat.className}`}>
-        🎇{category.toLocaleUpperCase()}
+          🎇{category.toLocaleUpperCase()}
         </h2>
         <InfoList infos={profile} />
       </div>

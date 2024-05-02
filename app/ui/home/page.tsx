@@ -6,7 +6,7 @@ import Projects from "../projects/projects";
 
 export default function Home() {
   return (
-    <div className={`homeContainer`}>
+    <div>
       <Hero />
       <Projects />
     </div>
