@@ -6,7 +6,7 @@
   --v-white-rgb: 255, 255, 255;
   --v-white-op: 255, 255, 255, 0.8;
   --v-dark-gray-rgb: 136, 136, 136;
-  --v-light-gray-rgb: 247, 249, 250;
+  --v-light-gray-rgb: 195, 195, 195;
   --v-medium-gray-rbg: 211, 211, 211;
   --v-dark-red-rgb: 183, 38, 97;
   --v-black-rgb: 11, 11, 11;
@@ -14,6 +14,7 @@
   --v-pink02-rgb: 255, 192, 203;
   --v-orange-rgb: 78, 10, 215;
   --v-light-green-rgb: 207, 235, 233;
+  --v-skills-gray-rgb: 70, 70 70;
   --v-gradient-right: linear-gradient(
     to right,
     rgb(113, 251, 241),
@@ -23,11 +24,6 @@
     to left,
     rgb(113, 251, 241),
     rgb(var(--v-pink01-rgb))
-  );
-  --v-gradient-gray-to-white: linear-gradient(
-    to right,
-    rgb(var(--v-dark-gray-rgb)),
-    rgb(var(--v-white-rgb))
   );
 }
 
@@ -117,7 +113,7 @@ header.about {
 }
 
 footer {
-  background: rgb(var(--v-dark-gray-rgb));
+  background: rgb(var(--v-light-gray-rgb));
 }
 
 main {

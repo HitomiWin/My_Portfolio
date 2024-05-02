@@ -28,22 +28,22 @@
   padding: 2em 0;
 }
 .item {
-  color: gray;
+  color: rgb(var(--v-skills-gray-rgb));
   font-weight: 400;
   letter-spacing: 1.2px;
-  font-size: clamp(14px, 2vw, 20px);
+  font-size: clamp(14px, 2vw, 16px);
 }
 .title {
   color: #505050;
   letter-spacing: 1.2px;
   font-weight: 600;
-  font-size: clamp(14px, 2vw, 20px);
+  font-size: clamp(14px, 2vw, 16px);
   margin: 1rem 0 0.5em;
 }
 .period {
   color: gray;
   font-weight: 400;
-  font-size: clamp(14px, 2vw, 20px);
+  font-size: clamp(14px, 2vw, 16px);
 }
 
 @media (min-width: 768px) {
