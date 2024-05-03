@@ -9,6 +9,7 @@
 .heading {
   font-size: clamp(30px, 3vw, 40px);
   font-weight: 300;
+  text-shadow: 1px 1px 2px rgb(100, 100, 100, 1);
 }
 
 .title {
@@ -34,7 +35,6 @@
   font-size: clamp(14px, 2vw, 16px);
 }
 .title {
-  color: #505050;
   letter-spacing: 1.2px;
   font-weight: 600;
   font-size: clamp(14px, 2vw, 16px);

@@ -47,7 +47,7 @@ p,
 svg,
 figure {
   margin: 0;
-  color: rgb(var(--v-black-rgb));
+  color: rgb(53, 84, 86);
 }
 a {
   color: rgb(var(--v-black-rgb));

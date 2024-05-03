@@ -3,6 +3,7 @@ import { montserrat } from "@/app/ui/fonts";
 import styles from "@/styles/about-hero-components.module.css";
 import { InfoList } from "./components";
 import { Info } from "@/constants";
+import { GiImperialCrown } from "react-icons/gi";
 
 interface Props {
   category: string;
@@ -13,7 +14,7 @@ export default function Profile({ category, profile }: Props) {
     <div className={styles[category]}>
       <div className="wContainer">
         <h2 className={`${styles.heading} ${montserrat.className}`}>
-          🎇{category.toLocaleUpperCase()}
+          <GiImperialCrown /> {category.toLocaleUpperCase()}
         </h2>
         <InfoList infos={profile} />
       </div>
