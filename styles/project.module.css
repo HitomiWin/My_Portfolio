@@ -20,6 +20,9 @@
 .description {
   font-weight: 300;
 }
+.img {
+  box-shadow: 2px 2px 2px rgb(100, 100, 100, 1);
+}
 
 @media (min-width: 768px) {
   .container {
